@@ -2,7 +2,7 @@
 @use '../components/mixins' as *;
 
 .get-started {
-    padding: 4rem;
+    padding: 4rem 0;
     background-color: $gray-200;
 }
 
@@ -35,6 +35,7 @@
     button {
         border: none;
         color: $white;
+        text-transform: capitalize;
 
         a {
             color: $white;

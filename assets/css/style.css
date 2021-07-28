@@ -11016,6 +11016,9 @@ textarea.form-control-lg {
 .portfolio button {
   text-transform: capitalize;
 }
+.portfolio button:hover {
+  color: #fff;
+}
 
 .portfolio-box {
   position: relative;
@@ -11063,7 +11066,7 @@ textarea.form-control-lg {
 }
 
 .get-started {
-  padding: 4rem;
+  padding: 4rem 0;
   background-color: #e9ecef;
 }
 
@@ -11093,6 +11096,7 @@ textarea.form-control-lg {
 .form button {
   border: none;
   color: #fff;
+  text-transform: capitalize;
 }
 .form button a {
   color: #fff;

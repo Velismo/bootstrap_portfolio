@@ -6,6 +6,10 @@
 
     button {
         text-transform: capitalize;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
 
