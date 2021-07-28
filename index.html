@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi portafolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/fontawesome.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/vendors/css/glightbox.min.css">
+    <title>Learning bootstrap v5 with sass</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+   <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- START THE NAVBAR SECTION -->
@@ -412,10 +411,11 @@
           <div class="row mt-5">
             <div class="col-md-12">
               <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
+                <!-- Accordion item 1 -->
+                <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
+                      ¿Cuáles son nuestros servicios?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -424,10 +424,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!-- Accordion item 2 -->
+                <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
+                      ¿Ofrecéis vuestros servicios en toda España?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -436,10 +437,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!-- Accordion item 3 -->
+                <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
+                      Si tengo un poroblema con mi web, ¿qué hago?
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -448,10 +450,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!-- Accordion item 4 -->
+                <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Accordion Item #4
+                      ¿Cuáles son vuestros proyectos futuros?
                     </button>
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -466,10 +469,319 @@
         </div>
       </section>
 
+      <!-- START THE PORTFOLIO SECTION -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold text-capitalize">Últimos trabajos</h1>
+            <div class="heading-line"></div>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos laborum mollitia aliquid?
+            </p>
+          </div>
+          <!-- Filter buttons -->
+          <div class="row mt-5 mb-4 g-3 text-center">
+            <div class="col-md-12">
+              <button class="btn btn-outline-primary" type="button">Todo</button>
+              <button class="btn btn-outline-primary" type="button">Web</button>
+              <button class="btn btn-outline-primary" type="button">Marketing</button>
+              <button class="btn btn-outline-primary" type="button">Diseño</button>
+            </div>
+          </div>
+          <!-- Start the portfolio items -->
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-1.jpg" alt="porfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 1</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-2.jpg" alt="porfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 2</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-3.jpg" alt="porfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 3</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-4.jpg" alt="porfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 4</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-5.jpg" alt="porfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 5</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-6.jpg" alt="porfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 6</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-7.jpg" alt="porfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 7</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-8.jpg" alt="porfolio 8 image" title="portfolio 8 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 8</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                <img src="./assets/images/portfolio/portfolio-9.jpg" alt="porfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>nombre del proyecto 9</h4>
+                    <p>categoría del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- SECCION GET STARTED -->
+      <section id="contact" class="get-started">
+        <div class="container">
+          <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize">¿Hablamos?</h1>
+            <div class="heading-line"></div>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae officiis et impedit!
+            </p>
+          </div>
+          <!-- Start the cta content -->
+          <div class="row text-white">
+            <div class="col-12 col-lg-6 gradient shadow p-3">
+              <div class="cta-info w-100">
+                <h4 class="display-4 fw-bold">100% de satisfacción grantizada</h4>
+                <p class="lh-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus omnis, earum rem accusamus, magni facilis ratione soluta, distinctio officiis aspernatur.
+                </p>
+                <h3 class="display-3--brief">¿Cuál es el siguiente paso?</h3>
+                <ul class="cta-info__list">
+                  <li>Os presentamos una propuesta</li>
+                  <li>Nos reunimos para revisarla</li>
+                  <li>Iniciamos el proceso de creación</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-white shadow p-3">
+              <div class="form w-100 pb-2">
+                <h4 class="display-3--title mb-5">Cuéntanos tu proyecto</h4>
+                <form action="#" class="row">
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <input type="text" placeholder="Nombre" id="inputFirstName" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <input type="text" placeholder="Apellido" id="inputLastName" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-lg-12 mb-3">
+                    <input type="text" placeholder="E-Mail" id="inputEmail" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-lg-12 mb-3">
+                    <textarea name="message" id="message" cols="30" rows="10" class="shadow form-control form-control-lg" placeholder="Tu mensaje"></textarea>
+                  </div>
+                  <div class="text-center d-grid mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                      Enviar
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- START FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Content for the phone -->
+            <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div class="contact-box__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                  <path d="M15 7a2 2 0 0 1 2 2" />
+                  <path d="M15 3a6 6 0 0 1 6 6" />
+                </svg>
+              </div>
+              <div class="contact-box__info">
+                <a href="#" class="contact-box__info--title">+34 695505944</a>
+                <p class="contact-box__info--subtitle">  Lun-Vie 9am-5pm</p>
+              </div>
+            </div> 
+            <!-- Content for the email -->
+            <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div class="contact-box__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                  <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                  <line x1="3" y1="19" x2="9" y2="13" />
+                  <line x1="15" y1="13" x2="21" y2="19" />
+                </svg>
+              </div>
+              <div class="contact-box__info">
+                <a href="#" class="contact-box__info--title">info@elayudante.es</a>
+                <p class="contact-box__info--subtitle">Soporte on-line</p>
+              </div>
+            </div>
+            <!-- Content for location -->
+            <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div class="contact-box__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <line x1="18" y1="6" x2="18" y2="6.01" />
+                  <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                  <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                  <line x1="9" y1="4" x2="9" y2="17" />
+                  <line x1="15" y1="15" x2="15" y2="20" />
+                </svg>
+              </div>
+              <div class="contact-box__info">
+                <a href="#" class="contact-box__info--title">Santander</a>
+                <p class="contact-box__info--subtitle">Cantabria</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Social media content -->
+        <div class="footer-sm" style="background-color: #212121;">
+          <div class="container">
+            <div class="row py-4 text-center text-white">
+              <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                Conecta con nosotros en redes sociales
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Start the content for company info -->
+        <div class="container mt-5">
+          <div class="row text-white justify-content-center mt-3 pb-3">
+            <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+              <h5 class="text-capitalize fw-bold">Nombre de la empresa</h5>
+              <hr class="bg-white d-inline-block mb-4 mt-4" style="width:60px; height: 2px;">
+              <p class="lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae inventore alias, optio laudantium facilis beatae omnis.
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize fw-bold">Productos</h5>
+              <hr class="bg-white d-inline-block mb-4 mt-4" style="width:60px; height: 2px;">
+              <ul class="list-inline company-list">
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize fw-bold">Enlaces de interés</h5>
+              <hr class="bg-white d-inline-block mb-4 mt-4" style="width:60px; height: 2px;">
+              <ul class="list-inline company-list">
+                <li><a href="#"></a>Tu cuenta</li>
+                <li><a href="#"></a>Hazte Partner</li>
+                <li><a href="#"></a>Crea una cuenta</li>
+                <li><a href="#"></a>Ayuda</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize fw-bold">Contacto</h5>
+              <hr class="bg-white d-inline-block mb-4 mt-4" style="width:60px; height: 2px;">
+              <ul class="list-inline company-list">
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+                <li><a href="#"></a>Lorem ipsum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start the copyright info -->
+        <div class="footer-bottom pt-5 pb-5">
+          <div class="container">
+            <div class="row text-center text-white">
+              <div class="col-12">
+                <div class="footer-bottom__copyright">
+                  &copy;Copyright 2021 | <a href="#">Landing page</a> | Creada por <a href="#">JMC Developers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- BACK TO TOP BUTTON -->
+      <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
 
     
     <script src="./assets/vendors/js/glightbox.min.js"></script>
